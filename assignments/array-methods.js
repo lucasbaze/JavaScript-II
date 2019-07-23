@@ -523,7 +523,7 @@ const runners = [
 }
 
 // Problem 2
-//Wants to group the runners by company, but also create a HOF or partial application function to group by multiple values of the same set of data
+//Wants to group the runners by company, but also create a partial application function to group by multiple values of the same set of data
 let groupBy = objectArray => {
     return group => {
         return objectArray.reduce((acc, obj) => {
