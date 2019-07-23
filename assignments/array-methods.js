@@ -465,17 +465,19 @@ const runners = [
 // }
 
 {
-    //let fullName = [];
-
+    // let fullName = [];
+    //
     // runners.forEach(x => {
     //     fullName.push(`${x.first_name}, ${x.last_name}`);
     // });
 
+    let fullName = [];
+
     function createFullName(item) {
-        return `${item.first_name}, ${item.last_name}`;
+        this.push(`${item.first_name}, ${item.last_name}`);
     }
 
-    let fullName = runners.forEach(createFullName, this);
+    runners.forEach(createFullName, fullName);
 
     console.log({ fullName });
 }
